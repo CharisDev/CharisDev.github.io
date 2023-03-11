@@ -22,14 +22,25 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  padding: 2em 1em;
+  padding: 1em 1em;
 }
 body div {
   text-align: center;
 }
+body div.families {
+  width: 100%;
+  text-align: end;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--logo-accent);
+}
+body div.families:hover {
+  color: var(--hero-accent);
+  font-weight: bolder;
+}
 body div.hero-wrapper .logo {
   width: 80%;
-  margin: 0 0 30px 0;
+  margin: 40px 0 30px 0;
 }
 body div.contact-wrapper {
   background-color: var(--logo-green);
