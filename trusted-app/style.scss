@@ -48,7 +48,9 @@ body {
         padding: 2em;
         border-radius: 8px;
 
-        width: fit-content;
+        max-width: 320px;
+
+        box-shadow: 5px 5px 25px rgb(128, 128, 128);
 
         h2 {
             color: var(--hero-accent);
@@ -71,7 +73,7 @@ body {
             padding: 10px 5px;
             margin: 10px 0;
             border-radius: 8px;
-            border: 2px solid var(--logo-text);
+            border: 1px solid var(--logo-text);
 
             box-sizing: border-box;
             width: 100%;
