@@ -1,0 +1,100 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*, html {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+*, root {
+    --main-background: #CBDAE9;
+    --logo-green: #E5F0E7;
+    --logo-accent: #779BC6;
+    --logo-text: #5A5E63;
+
+    --hero-accent: #0073ff;
+    --text: black;
+}
+
+body {
+    background-color: var(--main-background);
+    color: var(--text);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 2em 1em;
+
+    div {
+        text-align: center;
+    }
+    div.hero-wrapper {
+        
+        .logo {
+            width: 300px;
+            margin: 0 0 30px 0;
+        }
+    }
+
+    div.contact-wrapper {
+    
+        background-color: var(--logo-green);
+        padding: 2em;
+        border-radius: 8px;
+
+        width: fit-content;
+
+        h2 {
+            color: var(--hero-accent);
+            margin-bottom: 2em;
+        }
+
+    .contact-form {
+
+        .email-input {
+            text-align: center;
+        }
+
+        label {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--logo-text);
+        }
+
+        input {
+            padding: 10px 5px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid var(--logo-text);
+
+            box-sizing: border-box;
+            width: 100%;
+
+        }
+
+        .cta-btn {
+            padding: 10px 20px;
+            border-radius: 8px;
+            margin: 3em 0 0;
+            font-weight: 500;
+            color: var(--logo-green);
+            background-color: var(--hero-accent);
+
+            width: 100%;
+
+
+            &:hover {
+                background-color: green;
+            }
+        }
+        
+    }
+
+       
+    }
+}
