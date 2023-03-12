@@ -27,20 +27,25 @@ body {
 body div {
   text-align: center;
 }
-body div.families {
+body div.hero-wrapper .logo {
+  width: 80%;
+  margin: 40px 0 30px 0;
+}
+body div.hero-wrapper div.families {
   width: 100%;
   text-align: end;
   font-size: 12px;
   font-weight: 500;
   color: var(--logo-accent);
 }
-body div.families:hover {
+body div.hero-wrapper div.families:hover {
   color: var(--hero-accent);
   font-weight: bolder;
 }
-body div.hero-wrapper .logo {
-  width: 80%;
-  margin: 40px 0 30px 0;
+@media (min-width: 450px) {
+  body div.hero-wrapper div.families {
+    width: 380px;
+  }
 }
 body div.contact-wrapper {
   background-color: var(--logo-green);
@@ -48,6 +53,12 @@ body div.contact-wrapper {
   border-radius: 8px;
   max-width: 320px;
   box-shadow: 5px 5px 25px rgb(128, 128, 128);
+}
+@media (min-width: 450px) {
+  body div.contact-wrapper {
+    width: 380px;
+    max-width: 380px;
+  }
 }
 body div.contact-wrapper h2 {
   color: var(--hero-accent);

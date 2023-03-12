@@ -19,6 +19,21 @@
     --text: black;
 }
 
+$tablet: 450px;
+$desktop: 1000px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 body {
     background-color: var(--main-background);
     color: var(--text);
@@ -34,19 +49,7 @@ body {
         text-align: center;
     }
 
-    div.families{
-        width: 100%;
-        text-align: end;
-
-        font-size: 12px;
-        font-weight: 500;
-        color: var(--logo-accent);
-
-        &:hover {
-            color: var(--hero-accent);
-            font-weight: bolder;
-        }
-    }
+    
     
     div.hero-wrapper {
         
@@ -54,6 +57,24 @@ body {
        
             width: 80%;
             margin: 40px 0 30px 0;
+        }
+
+        div.families{
+            width: 100%;
+            text-align: end;
+    
+            font-size: 12px;
+            font-weight: 500;
+            color: var(--logo-accent);
+    
+            &:hover {
+                color: var(--hero-accent);
+                font-weight: bolder;
+            }
+
+            @include tablet {
+                width: 380px;
+            }
         }
     }
 
@@ -67,6 +88,11 @@ body {
 
         box-shadow: 5px 5px 25px rgb(128, 128, 128);
 
+        @include tablet {
+            width: 380px;
+            max-width: 380px;
+        }
+     
         h2 {
             color: var(--hero-accent);
             margin-bottom: 2em;
