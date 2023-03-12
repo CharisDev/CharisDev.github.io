@@ -203,11 +203,15 @@ body {
                 flex-direction: column;
                 justify-content: space-between;
 
-                max-width: 800px;
+                max-width: 500px;
                 padding: 25px;
                 border-radius: 5px;
 
                 box-shadow: 5px 5px 25px rgb(128, 128, 128);
+
+                @include desktop {
+                    max-width: 800px;
+                }
 
                 .container {
                     display: flex;
@@ -246,11 +250,12 @@ body {
                 }
 
                 .nanny-container {
+
                     .checkboxes {
                         display: flex;
                         justify-content: space-between;
                         width: 100%;
-                        margin: 10px 10px;
+                        margin: 5px 10px;
                         font-size: 12px;
 
                         @include desktop {

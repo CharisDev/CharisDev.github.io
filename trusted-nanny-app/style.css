@@ -149,10 +149,15 @@ body .hero-section .form-wrapper .search-form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 800px;
+  max-width: 500px;
   padding: 25px;
   border-radius: 5px;
   box-shadow: 5px 5px 25px rgb(128, 128, 128);
+}
+@media (min-width: 1000px) {
+  body .hero-section .form-wrapper .search-form {
+    max-width: 800px;
+  }
 }
 body .hero-section .form-wrapper .search-form .container {
   display: flex;
@@ -188,7 +193,7 @@ body .hero-section .form-wrapper .search-form .nanny-container .checkboxes {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 10px 10px;
+  margin: 5px 10px;
   font-size: 12px;
 }
 @media (min-width: 1000px) {
