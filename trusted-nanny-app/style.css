@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+*, html {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+*, root {
+  --main-background: #CBDAE9;
+  --logo-green: #E5F0E7;
+  --logo-accent: #779BC6;
+  --logo-text: #5A5E63;
+  --hero-accent: #0073ff;
+  --accent-dark: #557BA8;
+  --text: black;
+}
+
+body {
+  background-color: white;
+  color: var(--text);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+body header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+body header .top-container {
+  background-color: var(--logo-green);
+  width: 100%;
+  height: 30px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .top-container input {
+  background-color: white;
+  border-radius: 5px;
+  height: 20px;
+}
+body header .top-container .nannies, body header .top-container .login {
+  width: 100%;
+  text-decoration: none;
+  margin-left: 10px;
+  justify-self: flex-end;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--logo-accent);
+}
+body header .top-container .nannies:hover, body header .top-container .login:hover {
+  color: var(--hero-accent);
+  font-weight: bolder;
+}
+body header .top-container .login {
+  text-align: end;
+  margin-right: 5px;
+}
+body header div.bottom-container {
+  background-color: var(--main-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 150px;
+}
+body header div.bottom-container .logo {
+  margin: 20px 0;
+  width: 100px;
+}
+body header div.bottom-container .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: end;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  padding: 20px 0;
+}
+body header div.bottom-container .right-side .lang {
+  width: 100%;
+}
+body header div.bottom-container .right-side .lang a {
+  color: var(--logo-text);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 5px;
+}
+body header div.bottom-container .right-side .lang a:hover {
+  color: var(--hero-accent);
+}
+body header div.bottom-container .right-side .lang a.active {
+  background-color: var(--logo-green);
+  padding: 8px;
+  border-radius: 50%;
+}
+body header div.bottom-container .right-side .navigation {
+  background-color: var(--main-background);
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+body header div.bottom-container .right-side .navigation a {
+  color: var(--logo-text);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px 8px;
+  margin-left: 5px;
+}
+body header div.bottom-container .right-side .navigation a:hover {
+  color: var(--hero-accent);
+}
+body .hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+  height: 100%;
+}
+body .hero-section .hero-img {
+  position: absolute;
+  background: url("./inspired-young-woman-without-make-up-spending-time-with-daughter-carrying-her-piggyback-isolated-background.png");
+  background-size: cover;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+body .hero-section .form-wrapper {
+  margin: 30px 0;
+  justify-self: flex-start;
+}
+body .hero-section .form-wrapper p {
+  color: var(--logo-text);
+  font-weight: 500;
+}
+body .hero-section .form-wrapper .search-form {
+  background-color: var(--main-background);
+  color: var(--logo-text);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 25px rgb(128, 128, 128);
+}
+body .hero-section .form-wrapper .search-form .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+body .hero-section .form-wrapper .search-form .container p {
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  padding-left: 10px;
+}
+body .hero-section .form-wrapper .search-form .container input {
+  padding: 10px 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+  display: block;
+  background-color: white;
+  font-size: 12px;
+  width: 100%;
+}
+@media (min-width: 1000px) {
+  body .hero-section .form-wrapper .search-form .container input {
+    max-width: 150px;
+  }
+}
+@media (min-width: 1000px) {
+  body .hero-section .form-wrapper .search-form .needs-container input, body .hero-section .form-wrapper .search-form .nanny-container input {
+    max-width: 280px;
+  }
+}
+body .hero-section .form-wrapper .search-form .nanny-container .checkboxes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 10px;
+  font-size: 12px;
+}
+@media (min-width: 1000px) {
+  body .hero-section .form-wrapper .search-form .nanny-container .checkboxes {
+    max-width: 280px;
+  }
+}
+body .hero-section .form-wrapper .search-form .nanny-container .checkboxes input {
+  width: 28%;
+}
+@media (min-width: 1000px) {
+  body .hero-section .form-wrapper .search-form .family-container input {
+    max-width: 180px;
+  }
+}
+body .hero-section .form-wrapper .search-form .search-button {
+  background-color: var(--accent-dark);
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 3px 3px 3px var(--logo-accent);
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
+  margin: 30px 10px;
+}
+body .hero-section .form-wrapper .search-form .search-button:hover {
+  background-color: var(--hero-accent);
+}/*# sourceMappingURL=style.css.map */
