@@ -59,13 +59,14 @@ body {
             margin: 40px 0 30px 0;
         }
 
-        div.families{
+        a.families{
             width: 100%;
             text-align: end;
     
             font-size: 12px;
             font-weight: 500;
             color: var(--logo-accent);
+            text-decoration: none;
     
             &:hover {
                 color: var(--hero-accent);
