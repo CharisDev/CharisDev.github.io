@@ -1,0 +1,30 @@
+/*HERO section*/
+
+.hero {
+  background-color: grey;
+  height: 90vh;
+  padding: var(--padding);
+}
+
+.hero-title {
+  font-size: 2rem;
+  margin: 1rem 0 1rem 0;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  max-width: 750px;
+  margin: 0 0 1rem 0;
+}
+
+.hero .button {
+  margin: 10px 0;
+}
+
+#hero-calculate {
+  background-color: blue;
+}
+
+.hero .button {
+  background-color: green;
+}

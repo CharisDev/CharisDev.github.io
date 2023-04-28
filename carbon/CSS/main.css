@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import "header.css";
+@import "hero.css";
+@import "buttons.css";
+@import "footer.css";
 
 *,
 html {
@@ -27,99 +31,6 @@ html {
   align-items: center;
 }
 
-.button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 3px;
-  text-decoration: none;
-  color: white;
-}
-
-.button:hover,
-.nav-item:hover {
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.button:selected {
-  text-decoration: none;
-}
-
-/*HEADER*/
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 10vh;
-
-  background-color: black;
-}
-
-.logo {
-  color: white;
-  margin: auto auto auto var(--padding);
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.nav-item {
-  color: white;
-  text-decoration: none;
-  margin: auto var(--padding) auto 1rem;
-}
-
-.icon {
-  height: 25px;
-  width: auto;
-  padding: 0;
-}
-
-.lang-item {
-  color: rgb(180, 180, 180);
-  font-size: smaller;
-}
-
-.header .button {
-  border: 2px solid blue;
-}
-
-/*HERO section*/
-
-.hero {
-  background-color: grey;
-  height: 90vh;
-  padding: var(--padding);
-}
-
-.hero-title {
-  font-size: 2rem;
-  margin: 1rem 0 1rem 0;
-}
-
-.hero-text {
-  font-size: 1.25rem;
-  max-width: 750px;
-  margin: 0 0 1rem 0;
-}
-
-.hero .button {
-  margin: 10px 0;
-}
-
-#hero-calculate {
-  background-color: blue;
-}
-
-.hero .button {
-  background-color: green;
-}
-
 /*TEST section*/
 
 .test {
@@ -146,33 +57,4 @@ html {
 .test .button {
   background-color: purple;
   max-width: fit-content;
-}
-
-/* FOOTER */
-
-.footer {
-  display: flex;
-
-  background-color: black;
-  color: white;
-  height: 10vh;
-  width: 100%;
-}
-
-.footer .media {
-  margin: auto auto auto;
-}
-
-.footer .icon {
-  text-decoration: none;
-  color: white;
-}
-
-.footer .icon:hover {
-  font-weight: bolder;
-  cursor: pointer;
-}
-
-footer .contact {
-  margin: auto var(--padding) auto auto;
 }

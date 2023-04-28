@@ -1,0 +1,17 @@
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+}
+
+.button:hover,
+.nav-item:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button:selected {
+  text-decoration: none;
+}

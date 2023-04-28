@@ -1,0 +1,28 @@
+/* FOOTER */
+
+.footer {
+  display: flex;
+
+  background-color: black;
+  color: white;
+  height: 10vh;
+  width: 100%;
+}
+
+.footer .media {
+  margin: auto auto auto;
+}
+
+.footer .icon {
+  text-decoration: none;
+  color: white;
+}
+
+.footer .icon:hover {
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+footer .contact {
+  margin: auto var(--padding) auto auto;
+}
