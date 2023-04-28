@@ -38,16 +38,16 @@
 }
 
 /* RESPONSIVE MENU*/
-.desktop-only {
+.header .desktop-only {
   display: none;
 }
 
 @media only screen and (min-width: 600px) {
-  .desktop-only {
+  .header .desktop-only {
     display: unset;
   }
 
-  .mobile-only {
+  .header .mobile-only {
     display: none;
   }
 }

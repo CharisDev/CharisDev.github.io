@@ -26,3 +26,18 @@
 footer .contact {
   margin: auto var(--padding) auto auto;
 }
+
+/* RESPONSIVE MENU*/
+.footer .desktop-only {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer .desktop-only {
+    display: unset;
+  }
+
+  .footer .mobile-only {
+    display: none;
+  }
+}
