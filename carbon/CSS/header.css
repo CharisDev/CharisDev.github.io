@@ -27,6 +27,10 @@
   margin: auto var(--padding) auto 1rem;
 }
 
+.nav-item:hover {
+  border-bottom: 2px solid green;
+}
+
 .icon {
   height: 25px;
   width: auto;
