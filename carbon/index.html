@@ -11,63 +11,113 @@
     <!-- HEADER -->
 
     <header class="header">
-      <a class="logo" href="./index.html">NEITRALS.LV</a>
       <ul class="navigation">
-        <a href="./projects.html" class="nav-item desktop-only">PROJECTS</a>
-        <a href="./test-1.html" class="nav-item desktop-only">TEST</a>
-        <a href="./about.html" class="nav-item desktop-only">ABOUT US</a>
-        <a href="./shopping-cart.html" class="nav-item">
+        <div class="logo-group">
+          <a href="./index.html" class="link"
+            ><img src="./assets/logo.svg" alt="logo-image" class="logo-image" />
+          </a>
+          <a href="./index.html" class="link"
+            ><img
+              src="./assets/neitrals.lv.svg"
+              alt="neitrals.lv"
+              class="logo-text"
+            />
+          </a>
+        </div>
+
+        <a href="./about.html" class="nav-item desktop-only">About us</a>
+        <a href="./test-1.html" class="nav-item desktop-only">Test</a>
+        <a href="./projects.html" class="nav-item desktop-only">Projects</a>
+      </ul>
+
+      <ul class="navigation">
+        <a href="#" class="nav-item lang-item desktop-only">LAT</a>
+        <a href="./shopping-cart.html" class="nav-item desktop-only">
           <img
             class="icon"
-            src="./assets/shopping-cart.svg"
+            src="./assets/shopping-basket.svg"
             alt="shopping cart"
         /></a>
         <a href="#" class="nav-item mobile-only">
-          <img
-            class="icon"
-            id="menu"
-            src="./assets/menu.svg"
-            alt="shopping cart"
+          <img class="icon" id="menu" src="./assets/menu.svg" alt="menu"
         /></a>
-        <a href="#" class="nav-item lang-item desktop-only">LAT</a>
       </ul>
     </header>
 
     <!-- HERO section -->
 
     <main class="hero flex-container flex-align-left">
-      <h2 class="hero-title">Hero Title</h2>
-      <p class="hero-text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum corrupti
-        minima ad. Molestiae totam beatae perspiciatis accusamus tempora nam
-        recusandae?
-      </p>
-      <a href="./projects.html" class="button">Start Offsetting!</a>
+      <div class="hero-image"><img src="/assets/hero-illustration.svg" alt=""></div>
+      <div class="hero-content">
+        <h2 class="hero-title">
+          <span class="hero-title accent">Help save the planet</span><br />for
+          future generations.
+        </h2>
+        <p class="hero-text">Reduce your carbon footprint today!</p>
+      </div>
+      
+      <a href="./projects.html" class="button">Start offsetting</a>
     </main>
 
     <!-- TEST section -->
 
     <main class="test flex-container flex-align-center">
       <div class="box flex-container">
-        <h3 class="title">Find out how eco-conscious you are!</h3>
+        <h3 class="title">
+          Let's find out <br />
+          <span class="title accent">how eco-aware you are.</span>
+        </h3>
         <p class="text">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe,
-          accusantium!
+          Are you cognizant of the impact of your daily choices on the
+          environment?
         </p>
         <a href="./test-1.html" class="button">Start Test!</a>
       </div>
     </main>
 
+    <!-- HOW IT WORKS section -->
+
+    <main class="tests flex-container flex-align-center">
+      <div class="box flex-container">
+        <h3 class="title">
+          <span class="title accent">How it works</span><br />
+          Step by step
+        </h3>
+
+        <div class="step-list">
+          <div class="step-item">XXXXXXXXX</div>
+          <div class="step-item">XXXXXXXXX</div>
+          <div class="step-item">XXXXXXXXX</div>
+        </div>
+
+      
+    </main>
+
     <!-- FOOTER -->
 
     <footer class="footer">
-      <a href="#" class="logo">NEITRALS.LV</a>
-      <ul class="media desktop-only">
-        <a href="#" class="icon">ICON</a>
-        <a href="#" class="icon">ICON</a>
-        <a href="#" class="icon">ICON</a>
-      </ul>
-      <p class="contact">hello@neitrals.lv</p>
+        <div class="icon-container">
+          <a href="#" class="logo"><img src="/assets/logo.svg" alt="logo"></a>
+          <ul class="media">
+            <a href="#" class="icon"><img src="/assets/social_fb.svg" alt="facebook"></a>
+            <a href="#" class="icon"><img src="/assets/social_yt.svg" alt="youtube"></a>
+            <a href="#" class="icon"><img src="/assets/social_twitter.svg" alt="twitter"></a>
+          </ul>
+        </div>
+
+        <div class="input-form">
+          <p>Want to receive our awesome stories?</p>
+          <input type="text" name="email" class="input" placeholder="Enter your email">
+          <input type="submit" class="submit-btn">
+        </div>
+        
+        <ul class="links">
+          <a>About us</a>
+          <a>How it works</a>
+          <a>Projects</a>
+          <a>FAQs</a>
+        </ul>
     </footer>
+
   </body>
 </html>

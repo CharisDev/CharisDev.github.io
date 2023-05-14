@@ -2,16 +2,27 @@
 
 .footer {
   display: flex;
-
+  flex-direction: column;
+  flex-wrap: wrap;
   background-color: black;
   color: white;
+  align-items: center;
+  justify-content: space-between;
 
-  height: 10vh;
+  width: 100%;
+  padding: 0 var(--padding);
+}
+
+.footer .icon-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
 }
 
 .footer .media {
-  margin: auto auto auto;
+  display: flex;
+  align-items: center;
 }
 
 .footer .icon {
@@ -20,12 +31,22 @@
 }
 
 .footer .icon:hover {
-  font-weight: bolder;
   cursor: pointer;
 }
 
-footer .contact {
-  margin: auto var(--padding) auto auto;
+.footer .input {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+}
+
+.footer .submit-btn {
+  padding: 10px;
+}
+
+.footer .links {
+  margin: 10px;
 }
 
 /* RESPONSIVE MENU*/
