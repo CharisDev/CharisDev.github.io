@@ -1,0 +1,49 @@
+.test-page {
+  height: 70vh;
+  background-color: var(--white);
+  padding-top: 12vh;
+}
+
+.test-page .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+}
+
+.test-page .category-container {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  height: fit-content;
+}
+
+.test-page .category-item {
+  background-color: var(--beige);
+  padding: 0.9rem 1.8rem;
+  margin: 5px;
+  width: fit-content;
+
+  font-size: 0.8rem;
+}
+
+.answer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.answer-item {
+  width: 200px;
+  min-width: calc(50%-2px);
+  background-color: rgb(223, 223, 223);
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.test.hero {
+  height: unset;
+}
+
+.test a.button {
+  background-color: green;
+}
