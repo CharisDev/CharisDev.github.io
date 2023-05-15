@@ -44,12 +44,6 @@ html {
   height: 40vh;
 }
 
-.box {
-  /* border: 5px solid rgba(0, 128, 0, 0.348); */
-  padding: 5rem;
-  border-radius: 10px;
-}
-
 .title {
   font-size: 2.25rem;
   margin: 1rem 0 1rem 0;
@@ -71,6 +65,10 @@ html {
 }
 
 /* HOW IT WORKS section */
+
+.steps {
+  height: 50vh;
+}
 
 .step-list {
   display: flex;

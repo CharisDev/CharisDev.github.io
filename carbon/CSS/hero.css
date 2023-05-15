@@ -2,12 +2,12 @@
 
 .hero {
   background-color: var(--white);
-  height: 70vh;
+  height: 80vh;
   padding: var(--padding);
 }
 
 .hero .hero-title {
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 1rem 0 1rem 0;
 }
 
@@ -16,9 +16,9 @@
 }
 
 .hero-text {
-  font-size: 1rem;
+  font-size: 1.5rem;
   max-width: 750px;
-  margin: 0 0 1rem 0;
+  margin: 1rem 0 1rem 0;
 }
 
 .hero .button {
@@ -26,7 +26,11 @@
 }
 
 .hero .button {
-  background-color: var(--green);
+  background-color: var(--black);
+}
+
+.hero .button:hover {
+  background-color: var(--gold);
 }
 
 /* RESPONSIVE HERO ILLUSTRATION */
