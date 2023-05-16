@@ -43,7 +43,7 @@
 
 /* RESPONSIVE HERO TITLE and ILLUSTRATION */
 
-/* Landscape view and Tablet */
+/* Landscape view and Tablet size */
 
 @media only screen and (min-width: 658px) {
   .hero {
@@ -65,7 +65,7 @@
   }
 }
 
-/* Desktop */
+/* Desktop size */
 
 @media only screen and (min-width: 1024px) {
   .hero .hero-title {
