@@ -20,7 +20,13 @@
   font-weight: normal;
 }
 
-.title.strong {
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.strong {
   font-weight: 600;
 }
 

@@ -54,6 +54,8 @@
 .footer .text {
   font-size: 0.9rem;
   padding-bottom: 1em;
+  color: white;
+  text-align: left;
 }
 
 .footer .input {

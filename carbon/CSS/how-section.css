@@ -13,16 +13,31 @@
 .step-list {
   display: flex;
   flex-wrap: wrap;
+  justify-items: center;
+}
+
+.strong {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  align-self: center;
+  text-align: center;
 }
 
 .step-item {
   border: 2px solid red;
   width: 100%;
-  margin: 10px;
+  /* margin: 10px; */
   padding: 2em;
 }
 
-@media only screen and (min-width: 1024px) {
+.text {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+@media only screen and (min-width: 768px) {
   .step-item {
     width: 30%;
   }
