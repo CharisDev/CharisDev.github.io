@@ -5,6 +5,7 @@
 @import "colors.css";
 @import "hero-section.css";
 @import "test-section.css";
+@import "how-section.css";
 @import "projects.css";
 @import "test-page.css";
 @import "about.css";
@@ -36,23 +37,6 @@ html {
 
 .h-center {
   align-items: center;
-}
-
-/* HOW IT WORKS section */
-
-.steps {
-  height: 50vh;
-}
-
-.step-list {
-  display: flex;
-  justify-content: space-around;
-}
-
-.step-item {
-  border: 2px solid red;
-  margin: 10px;
-  padding: 2em;
 }
 
 @media only screen and (min-width: 1024px) {

@@ -17,36 +17,18 @@
 /* TEXT */
 
 .test-section .section-title {
-  text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.3);
   color: var(--white);
-  font-size: 0.8rem;
-  font-weight: normal;
-  text-align: center;
-  align-self: left;
-  margin-bottom: 0.5rem;
-  width: fit-content;
 }
 
 .test-section .title {
   background-color: rgba(0, 0, 0, 0.25);
-  font-size: 1.6rem;
   color: var(--white);
-  text-align: left;
-  margin-bottom: 1rem;
-  width: fit-content;
-}
-
-.test-section .strong {
-  font-weight: 600;
 }
 
 .test-section .text {
-  font-size: 0.8rem;
   color: var(--white);
   background-color: rgba(0, 0, 0, 0.3);
-  text-align: left;
-  margin-bottom: 1rem;
 }
 
 /* BUTTON */
@@ -70,20 +52,6 @@
 /* Landscape view and Tablet size */
 
 @media only screen and (min-width: 658px) {
-  .test-section .section-title {
-    align-self: center;
-  }
-
-  .test-section .title {
-    align-self: center;
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .test-section .text {
-    font-size: 0.9rem;
-  }
-
   .test-section a.button {
     align-self: center;
   }
@@ -95,17 +63,5 @@
   .test-section {
     background-color: var(--gold);
     min-height: 40vh;
-  }
-
-  .test-section .title {
-    font-size: 2.5rem;
-    margin: 1rem 0 1rem 0;
-    text-align: center;
-  }
-
-  .test-section .text {
-    font-size: 1rem;
-    text-align: center;
-    margin: 0 0 1rem 0;
   }
 }
