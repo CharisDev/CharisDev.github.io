@@ -25,11 +25,11 @@
 }
 
 .hero .button {
-  background-color: var(--black);
+  background-color: var(--gold);
 }
 
 .hero .button:hover {
-  background-color: var(--gold);
+  background-color: var(--green);
 }
 
 .hero .hero-image {

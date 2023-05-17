@@ -1,13 +1,21 @@
 /* TEST section */
 
 .test-section {
-  background-color: var(--gold);
   min-height: 55vh;
   padding: 1rem var(--padding) 2rem var(--padding);
+
+  background-image: url("/assets/image_forest.png");
+  background-color: var(--gold);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
 }
 
 .test-section .title {
+  background-color: rgba(0, 0, 0, 0.2);
   font-size: 1.6rem;
+  color: var(--white);
   text-align: left;
 }
 
@@ -17,14 +25,26 @@
 
 .test-section .text {
   font-size: 1rem;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.304);
   text-align: left;
   margin-bottom: 1rem;
 }
 
 .test-section a.button {
-  background-color: purple;
-  max-width: fit-content;
+  background-color: var(--violet);
+  min-width: fit-content;
+  width: 150px;
+  text-align: center;
   align-self: left;
+  box-shadow: 20px 10px 10px black;
+  margin-top: 1rem;
+}
+
+.test-section a.button:hover,
+.test-section a.button:active,
+.test-section a.button:focus {
+  background-color: var(--green);
 }
 
 /* RESPONSIVE HERO TITLE and ILLUSTRATION */
