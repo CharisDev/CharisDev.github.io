@@ -2,7 +2,9 @@
 
 .test-section {
   min-height: 55vh;
-  padding: 1rem var(--padding) 2rem var(--padding);
+  padding: 1rem var(--padding) 1rem var(--padding);
+
+  /* BACKGROUND IMAGE */
 
   background-image: url("../assets/image_forest.png");
   background-color: var(--gold);
@@ -12,27 +14,45 @@
   height: auto;
 }
 
+/* TEXT */
+
+.test-section .section-title {
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-align: center;
+  align-self: left;
+  margin-bottom: 0.5rem;
+  width: fit-content;
+}
+
 .test-section .title {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.25);
   font-size: 1.6rem;
   color: var(--white);
   text-align: left;
+  margin-bottom: 1rem;
+  width: fit-content;
 }
 
-.test-section .accent {
+.test-section .strong {
   font-weight: 600;
 }
 
 .test-section .text {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: var(--white);
-  background-color: rgba(0, 0, 0, 0.304);
+  background-color: rgba(0, 0, 0, 0.3);
   text-align: left;
   margin-bottom: 1rem;
 }
 
+/* BUTTON */
+
 .test-section a.button {
-  background-color: var(--violet);
+  background-color: var(--green);
   min-width: fit-content;
   width: 150px;
   text-align: center;
@@ -44,16 +64,24 @@
 .test-section a.button:hover,
 .test-section a.button:active,
 .test-section a.button:focus {
-  background-color: var(--green);
+  background-color: var(--gold);
 }
-
-/* RESPONSIVE HERO TITLE and ILLUSTRATION */
 
 /* Landscape view and Tablet size */
 
 @media only screen and (min-width: 658px) {
+  .test-section .section-title {
+    align-self: center;
+  }
+
   .test-section .title {
+    align-self: center;
+    text-align: center;
     font-size: 2rem;
+  }
+
+  .test-section .text {
+    font-size: 0.9rem;
   }
 
   .test-section a.button {
@@ -75,12 +103,9 @@
     text-align: center;
   }
 
-  .test-section .accent {
-    font-weight: 600;
-  }
-
   .test-section .text {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
     margin: 0 0 1rem 0;
   }
 }
