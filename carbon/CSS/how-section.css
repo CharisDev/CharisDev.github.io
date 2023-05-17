@@ -3,8 +3,7 @@
 .how-section {
   min-height: 50vh;
   width: 100%;
-  padding: 0 var(--padding);
-  padding: auto auto;
+  padding: 1rem var(--padding);
 }
 
 .how-section .flex-container {
