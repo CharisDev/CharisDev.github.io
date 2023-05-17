@@ -4,7 +4,7 @@
   min-height: 55vh;
   padding: 1rem var(--padding) 2rem var(--padding);
 
-  background-image: url("/assets/image_forest.png");
+  background-image: url("../assets/image_forest.png");
   background-color: var(--gold);
   background-size: cover;
   background-position: center;
