@@ -17,10 +17,9 @@
 }
 
 .how-section .step-item {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 100%;
-  /* margin: 10px; */
-  padding: 2em;
+  padding: 2em 2em 2em 0;
 }
 
 /* TEXT */
@@ -30,21 +29,32 @@
 }
 
 .how-section .subtitle {
-  align-self: center;
-  text-align: center;
+  align-self: left;
+  text-align: left;
 }
 
 .how-section .text {
-  text-align: center;
+  text-align: left;
   font-size: 0.8rem;
+  max-width: 400px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 658px) {
   .how-section .step-list {
     justify-content: space-between;
   }
 
   .how-section .step-item {
     width: 30%;
+    padding: 1em;
+  }
+
+  .how-section .subtitle {
+    align-self: center;
+    text-align: center;
+  }
+
+  .how-section .text {
+    text-align: center;
   }
 }
