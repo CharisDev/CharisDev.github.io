@@ -1,0 +1,22 @@
+/* PROJECTS page */
+
+.projects {
+  min-height: 70vh;
+  padding: var(--padding);
+}
+
+.projects .button {
+  background-color: var(--gold);
+}
+
+@media only screen and (min-width: 658px) {
+  .projects .text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 1rem;
+  }
+
+  .projects .button {
+    align-self: center;
+  }
+}

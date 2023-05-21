@@ -58,25 +58,36 @@
   text-align: left;
 }
 
+.footer #subscribe-form {
+  min-width: 250px;
+
+  margin-bottom: 1rem;
+}
+
 .footer .input {
   background-color: black;
   border: 2px solid white;
   color: white;
   padding: 10px;
+  min-width: 140px;
+  font-size: 0.9rem;
+
+  margin: 0 0 0.3rem;
 }
 
 .footer .submit-btn {
   padding: 10px;
   font-size: 0.9rem;
-  width: fit-content;
+  width: 90px;
   font-weight: 500;
-  border: 2px solid white;
+
+  margin: 0 0 0.3rem;
 }
 
 .footer .right-container {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: start;
   justify-content: space-between;
   width: fit-content;
 }
@@ -87,13 +98,18 @@
   align-items: center;
   width: 35%;
   min-width: fit-content;
+
+  margin-bottom: 1rem;
 }
 
 .footer .links a {
   color: white;
-  margin-left: 0.9rem;
   text-decoration: none;
   font-size: 0.8rem;
+}
+
+.footer .links a:not(:first-child) {
+  margin-left: 0.9rem;
 }
 
 .footer .links a:hover,
@@ -112,9 +128,21 @@
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 658px) {
   .footer .bottom-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .footer #subscribe-form {
+    margin-bottom: 0;
+  }
+
+  .footer .right-container {
+    align-items: end;
+  }
+
+  .footer .links {
+    margin-bottom: 0;
   }
 }

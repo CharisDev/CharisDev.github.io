@@ -121,8 +121,11 @@
 
           <div class="left-container">
             <p class="text">Want to receive our awesome stories?</p>
-            <input type="text" name="email" class="input" placeholder="Enter your email" required>
+          <form id="subscribe-form" action="/subscribers" method="post">
+            <input type="email" name="email" class="input" placeholder="Enter your email" required>
             <input type="submit" class="submit-btn" value="Subscribe">
+          </form>
+  
           </div>
 
           <div class="right-container">

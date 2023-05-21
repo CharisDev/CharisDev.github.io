@@ -30,12 +30,14 @@
 .header .navigation {
   display: flex;
   justify-content: space-between;
+  padding-right: var(--padding);
+  box-sizing: border-box;
 }
 
 .header .nav-item {
   color: var(--black);
   text-decoration: none;
-  margin: auto var(--padding) auto 0.5rem;
+  margin: auto 2rem auto 0.1rem;
 
   font-size: 0.9rem;
   font-weight: 400;
@@ -58,7 +60,7 @@
 .header .lang-item {
   font-size: smaller;
   font-weight: 600;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
 /* RESPONSIVE MENU*/
