@@ -46,11 +46,12 @@
 
     <!-- MAIN section -->
 
-    <!-- Category info -->
-
     <main class="test-page flex-container h-center">
       <h2 class="title strong">How eco-aware are you?</h2>
       <p class="text">14 questions in 5 minutes</p>
+
+      <!-- Category info -->
+
       <div class="category-container">
         <div class="category-item highlighted">
           <img
@@ -96,16 +97,28 @@
 
       <!-- QUESTION / ANSWER  -->
 
-      <p class="text">FOOD (Question 1 of 10)</p>
+      <p class="text">FOOD (Question 1 of 14)</p>
       <h3 class="test-question">
         1. How often do you eat animal-based products?
       </h3>
-      <div class="answer-container">
-        <div class="answer-item">Answer option 1</div>
-        <div class="answer-item">Answer option 2</div>
-        <div class="answer-item">Answer option 3</div>
-      </div>
-      <a href="#" class="button">Next Question</a>
+      <form action="" id="question-1" class="answer-container">
+        <div class="answer-item">
+          <input type="radio" id="q1-a1" name="q1" value="never" />
+          <label for="q1-a1" class="answer-label">Never</label><br />
+        </div>
+
+        <div class="answer-item">
+          <input type="radio" id="q1-a2" name="q1" value="sometimes" />
+          <label for="q1-a2" class="answer-label">Sometimes</label><br />
+        </div>
+
+        <div class="answer-item">
+          <input type="radio" id="q1-a3" name="q1" value="every-day" />
+          <label for="q1-a3" class="answer-label">Every day</label><br />
+        </div>
+
+        <input type="submit" class="button" value="Next Question" />
+      </form>
     </main>
 
     <!-- FOOTER -->
@@ -128,14 +141,17 @@
 
       <div class="bottom-container">
         <div class="left-container">
-          <p class="subscribe-text">Want to receive our awesome stories?</p>
-          <input
-            type="text"
-            name="email"
-            class="input"
-            placeholder="Enter your email"
-          />
-          <input type="submit" class="submit-btn" value="Subscribe" />
+          <p class="text">Want to receive our awesome stories?</p>
+          <form id="subscribe-form" action="/subscribers" method="post">
+            <input
+              type="email"
+              name="email"
+              class="input"
+              placeholder="Enter your email"
+              required
+            />
+            <input type="submit" class="submit-btn" value="Subscribe" />
+          </form>
         </div>
 
         <div class="right-container">

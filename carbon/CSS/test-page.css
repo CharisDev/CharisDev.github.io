@@ -5,10 +5,6 @@
   padding: 6rem var(--padding);
 }
 
-.test-page .button {
-  background-color: var(--gold);
-}
-
 /* CATEGORY INFO */
 
 .test-page .category-container {
@@ -67,11 +63,28 @@
 
 .test-page .answer-item {
   width: 100%;
-  min-width: calc(50%-2px);
-  background-color: rgb(223, 223, 223);
-  padding: 2rem;
-  margin: 1rem;
+  background-color: var(--grey);
+  padding: 0.6rem 1rem;
+  margin: 5px;
+  text-align: center;
 }
+
+.test-page .answer-label {
+  font-size: 0.8rem;
+}
+
+.test-page input {
+  display: none;
+}
+
+/* BUTTON */
+
+.test-page .button {
+  background-color: var(--gold);
+  margin-top: 2rem;
+}
+
+/* Tablet and Desktop view */
 
 @media only screen and (min-width: 658px) {
   .test-page .category-container {
@@ -79,11 +92,19 @@
     flex-wrap: nowrap;
   }
 
+  .test-page .test-question {
+    font-size: 1.5rem;
+  }
+
   .test-page .answer-container {
     flex-direction: column;
   }
 
   .test-page .answer-item {
-    max-width: 200px;
+    max-width: 380px;
+  }
+
+  .test-page .answer-label {
+    font-size: 1rem;
   }
 }
