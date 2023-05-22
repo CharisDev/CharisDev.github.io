@@ -78,6 +78,8 @@
 
 .test-page .answer-label {
   font-size: 0.8rem;
+  display: inline-block;
+  width: 240px;
 }
 
 .test-page input[type="radio"] {
