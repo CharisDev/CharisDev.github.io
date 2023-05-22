@@ -38,6 +38,10 @@
   margin-left: 0.5rem;
 }
 
+.test-page .category-icon {
+  height: 0.7rem;
+}
+
 /* QUESTION */
 
 .test-page .text {
@@ -74,6 +78,7 @@
 .test-page .answer-item:active {
   background-color: var(--gold);
   color: var(--white);
+  cursor: pointer;
 }
 
 .test-page .answer-label {
