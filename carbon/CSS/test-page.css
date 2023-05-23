@@ -98,8 +98,12 @@
 /* BUTTON */
 
 .test-page .button {
-  background-color: var(--gold);
+  background-color: var(--black);
   margin-top: 2rem;
+}
+
+.test-page .button:hover {
+  background-color: var(--gold);
 }
 
 /* Tablet and Desktop view */
