@@ -25,10 +25,12 @@
           </a>
         </div>
 
-        <a href="./about.html" class="nav-item desktop-only active">About us</a>
+        <a href="./about.html" class="nav-item desktop-only">About us</a>
         <a href="./test-1.html" class="nav-item desktop-only">Test</a>
         <a href="./projects.html" class="nav-item desktop-only">Projects</a>
-        <a href="./calculator.html" class="nav-item desktop-only">Calculator</a>
+        <a href="./calculator.html" class="nav-item desktop-only active"
+          >Calculator</a
+        >
       </ul>
 
       <ul class="navigation">
@@ -44,14 +46,20 @@
 
     <!-- MAIN section -->
 
-    <main class="about-page flex-container h-left">
-      <h2 class="title strong">Our Team</h2>
-      <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse sint vel
-        sunt similique odit sed, ab hic odio quis animi nostrum nam dicta fugiat
-        cumque rem tenetur commodi delectus tempora!
-      </p>
-      <a href="#" class="button">Get in touch</a>
+    <main class="calculator-page flex-container h-center">
+      <h2 class="title strong">Calculate your carbon footprint!</h2>
+      <div class="flex-container">
+        <iframe
+          class="form-calculator"
+          width="710"
+          height="1300"
+          frameborder="0"
+          marginwidth="0"
+          marginheight="0"
+          scrolling="no"
+          src="https://calculator.carbonfootprint.com/calculator.aspx"
+        ></iframe>
+      </div>
     </main>
 
     <!-- FOOTER -->
@@ -83,7 +91,7 @@
               placeholder="Enter your email"
               required
             />
-            <input type="submit" class="submit-btn" value="Subscribe" />
+            <button type="submit" class="submit-btn">Subscribe</button>
           </form>
         </div>
 
