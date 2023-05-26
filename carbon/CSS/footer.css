@@ -33,6 +33,10 @@
 .footer .icon {
   text-decoration: none;
   color: white;
+  border: 2px dashed grey;
+  height: 55.2px;
+  width: 55.2px;
+  margin: 2px;
 }
 
 .footer .icon:hover {

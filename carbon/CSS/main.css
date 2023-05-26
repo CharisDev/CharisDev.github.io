@@ -3,13 +3,14 @@
 @import "header.css";
 @import "typography.css";
 @import "colors.css";
+@import "buttons.css";
 @import "hero-section.css";
 @import "test-section.css";
 @import "how-section.css";
-@import "projects.css";
 @import "test-page.css";
+@import "projects.css";
 @import "about.css";
-@import "buttons.css";
+@import "basket.css";
 @import "footer.css";
 
 *,

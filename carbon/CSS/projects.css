@@ -9,6 +9,10 @@
   background-color: var(--gold);
 }
 
+.projects a.button:hover {
+  background-color: var(--green);
+}
+
 @media only screen and (min-width: 658px) {
   .projects .text {
     text-align: center;

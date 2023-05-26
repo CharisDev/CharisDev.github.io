@@ -1,26 +1,28 @@
-/* ABOUT page */
+/* Shopping BASKET */
 
-.about-page {
+.basket {
   min-height: 70vh;
   padding: var(--padding);
 }
 
-.about-page .button {
+.basket a.button {
   background-color: var(--gold);
+  margin-top: 2rem;
+  max-width: fit-content;
 }
 
-.about-page a.button:hover {
+.basket a.button:hover {
   background-color: var(--green);
 }
 
 @media only screen and (min-width: 658px) {
-  .about-page .text {
+  .basket .text {
     text-align: center;
     max-width: 700px;
     margin: 0 auto 1rem;
   }
 
-  .about-page .button {
+  .basket .button {
     align-self: center;
   }
 }

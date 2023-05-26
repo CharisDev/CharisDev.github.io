@@ -42,12 +42,15 @@
   font-size: 0.9rem;
   font-weight: 400;
   min-width: fit-content;
+
+  border-bottom: 2px solid transparent;
 }
 
 .header .nav-item:hover,
 .header .nav-item:active,
 .header .nav-item:focus {
-  font-weight: bolder;
+  font-weight: 500;
+  border-bottom: 2px solid var(--gold);
 }
 
 /* Shopping basket */
@@ -76,4 +79,11 @@
   .header .mobile-only {
     display: none;
   }
+}
+
+/* Active page indication */
+
+.header a.nav-item.desktop-only.active {
+  font-weight: 500;
+  border-bottom: 2px solid var(--gold);
 }
