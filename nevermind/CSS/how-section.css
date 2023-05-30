@@ -1,0 +1,60 @@
+/* HOW IT WORKS section */
+
+.how-section {
+  min-height: 50vh;
+  width: 100%;
+  padding: 1rem var(--padding);
+}
+
+.how-section .flex-container {
+  width: 100%;
+}
+
+.how-section .step-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.how-section .step-item {
+  /* border: 2px solid red; */
+  width: 100%;
+  padding: 2em 2em 2em 0;
+}
+
+/* TEXT */
+
+.how-section .strong {
+  font-size: 1.5rem;
+}
+
+.how-section .subtitle {
+  align-self: left;
+  text-align: left;
+}
+
+.how-section .text {
+  text-align: left;
+  font-size: 0.8rem;
+  max-width: 400px;
+}
+
+@media only screen and (min-width: 658px) {
+  .how-section .step-list {
+    justify-content: space-between;
+  }
+
+  .how-section .step-item {
+    width: 30%;
+    padding: 1em;
+  }
+
+  .how-section .subtitle {
+    align-self: center;
+    text-align: center;
+  }
+
+  .how-section .text {
+    text-align: center;
+  }
+}

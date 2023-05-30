@@ -1,0 +1,67 @@
+/* TEST section */
+
+.test-section {
+  min-height: 55vh;
+  padding: 1rem var(--padding) 1rem var(--padding);
+
+  /* BACKGROUND IMAGE */
+
+  background-image: url("../assets/image_forest.png");
+  background-color: var(--gold);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto;
+}
+
+/* TEXT */
+
+.test-section .section-title {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: var(--white);
+}
+
+.test-section .title {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: var(--white);
+}
+
+.test-section .text {
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* BUTTON */
+
+.test-section a.button {
+  background-color: var(--green);
+  min-width: fit-content;
+  width: 150px;
+  text-align: center;
+  align-self: left;
+  box-shadow: 20px 10px 10px black;
+  margin-top: 1rem;
+}
+
+.test-section a.button:hover,
+.test-section a.button:active,
+.test-section a.button:focus {
+  background-color: var(--gold);
+}
+
+/* Landscape view and Tablet size */
+
+@media only screen and (min-width: 658px) {
+  .test-section a.button {
+    align-self: center;
+  }
+}
+
+/* Desktop size */
+
+@media only screen and (min-width: 1024px) {
+  .test-section {
+    background-color: var(--gold);
+    min-height: 40vh;
+  }
+}

@@ -1,0 +1,152 @@
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 30vh;
+  padding: 1rem var(--padding) 1rem;
+}
+
+.footer .top-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer img.logo {
+  border: 2px solid white;
+}
+
+.footer .media {
+  display: flex;
+  align-items: center;
+}
+
+.footer .icon {
+  text-decoration: none;
+  color: white;
+  border: 2px dashed grey;
+  height: 55.2px;
+  width: 55.2px;
+  margin: 2px;
+}
+
+.footer .icon:hover {
+  cursor: pointer;
+}
+
+.footer .bottom-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.footer .left-container {
+  min-width: fit-content;
+}
+
+.footer .text {
+  font-size: 0.9rem;
+  margin-bottom: 1em;
+  color: white;
+  text-align: left;
+}
+
+.footer #subscribe-form {
+  /* min-width: 250px; */
+
+  margin-bottom: 1rem;
+}
+
+.footer .input {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  min-width: 140px;
+  font-size: 0.9rem;
+
+  margin: 0 0 0.3rem;
+}
+
+.footer .submit-btn {
+  padding: 10px;
+  font-size: 0.9rem;
+  width: 90px;
+  font-weight: 500;
+
+  margin: 0 0 0.3rem;
+}
+
+.footer .right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.footer .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  min-width: fit-content;
+
+  margin-bottom: 1rem;
+}
+
+.footer .links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.footer .links a:not(:first-child) {
+  margin-left: 0.9rem;
+}
+
+.footer .links a:hover,
+.footer .links a:focus,
+.footer .links a:active {
+  text-decoration: underline;
+}
+
+.footer .copyrights {
+  font-size: 0.8rem;
+  width: fit-content;
+}
+
+/* RESPONSIVE MENU*/
+.footer .desktop-only {
+  display: none;
+}
+
+@media only screen and (min-width: 658px) {
+  .footer .bottom-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer #subscribe-form {
+    margin-bottom: 0;
+  }
+
+  .footer .right-container {
+    align-items: end;
+  }
+
+  .footer .links {
+    margin-bottom: 0;
+  }
+}

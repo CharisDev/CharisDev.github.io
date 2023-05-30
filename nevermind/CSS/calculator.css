@@ -1,0 +1,16 @@
+/* CALCULATOR page */
+
+.calculator-page {
+  min-height: 70vh;
+  padding: 5rem var(--padding);
+}
+
+.calculator-page .title {
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.form-calculator {
+  font-family: "Inter", sans-serif;
+  max-height: 800px;
+}

@@ -1,0 +1,132 @@
+/* TEST page */
+
+.test-page {
+  min-height: 70vh;
+  padding: 6rem var(--padding);
+}
+
+/* CATEGORY INFO */
+
+.test-page .category-container {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.test-page .category-item {
+  background-color: var(--beige);
+  padding: 0.5rem 1rem;
+  margin: 5px;
+  width: 100%;
+  min-width: 120px;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-page .highlighted {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.test-page .category-name {
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
+}
+
+.test-page .category-icon {
+  height: 0.7rem;
+}
+
+/* QUESTION */
+
+.test-page .text {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.test-page .test-question {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* ANSWERS */
+
+.test-page .answer-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.test-page .answer-item {
+  width: 100%;
+  background-color: var(--grey);
+  padding: 0.6rem 1rem;
+  margin: 5px;
+  text-align: center;
+}
+
+.test-page .answer-item:hover,
+.test-page .answer-item:focus,
+.test-page .answer-item:active {
+  background-color: var(--gold);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.test-page .answer-label {
+  font-size: 0.8rem;
+  display: inline-block;
+  width: 100%;
+}
+
+.test-page input[type="radio"] {
+  display: none;
+}
+
+.test-page input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+/* BUTTON */
+
+.test-page .button {
+  background-color: var(--black);
+  margin-top: 2rem;
+}
+
+.test-page .button:hover {
+  background-color: var(--gold);
+}
+
+/* Tablet and Desktop view */
+
+@media only screen and (min-width: 658px) {
+  .test-page .category-container {
+    width: fit-content;
+    flex-wrap: nowrap;
+  }
+
+  .test-page .test-question {
+    font-size: 1.5rem;
+  }
+
+  .test-page .answer-container {
+    flex-direction: column;
+  }
+
+  .test-page .answer-item {
+    max-width: 380px;
+  }
+
+  .test-page .answer-label {
+    font-size: 1rem;
+  }
+}
