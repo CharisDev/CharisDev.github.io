@@ -35,8 +35,7 @@
 
 .test-section a.button {
   background-color: var(--green);
-  min-width: fit-content;
-  width: 150px;
+  width: fit-content;
   text-align: center;
   align-self: left;
   box-shadow: 20px 10px 10px black;

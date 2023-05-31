@@ -29,10 +29,8 @@
 
 .hero .button {
   margin: 30px 0;
-}
-
-.hero .button {
   background-color: var(--gold);
+  width: 150px;
 }
 
 .hero .button:hover {
